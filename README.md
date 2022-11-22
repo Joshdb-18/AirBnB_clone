@@ -1,5 +1,5 @@
 ## AirBnB Clone - The console
-![HBNB](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221122T131933Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e44acc7b672de6bfe620a2b5fd9a4157034ace7d2530e51885a45028af7a4311)
+![HBNB](https://camo.githubusercontent.com/a0c52a69dc410e983b8c63fa4aa57e83cb4157cd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6869676865722d6c6576656c5f70726f6772616d6d696e672b2f3236332f4842544e2d68626e622d46696e616c2e706e67)
 So this project is the first step towards building a first full web application (which is an AirBnB clone). This first step consists of a custom command-line interface for data management, and the base classes for the storage of this data.
 
 ## Step 1: Write a command interpreter (The Console)
