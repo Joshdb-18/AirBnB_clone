@@ -66,6 +66,6 @@ $
 - [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
 - [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
 
-# AUTHOR
+# AUTHORS
 - Aminu Rabiu | arabiu033@gmail.com | [Github](https://github.com/arabiu033)
 - Damilola Joshua Oluwafemi | joshuadami17@gmail.com | [Github](https://github.com/Joshdb-18)
