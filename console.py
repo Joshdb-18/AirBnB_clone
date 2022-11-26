@@ -48,11 +48,9 @@ class HBNBCommand(cmd.Cmd):
          "Review"
     }
 
-
     def emptyline(self):
         """Shouldn’t execute anything"""
         pass
-
 
     def default(self, arg):
         """Default behaviour"""
@@ -68,29 +66,25 @@ class HBNBCommand(cmd.Cmd):
             clin = [arg[:match.span()[0]], arg[match.span()[1]:]]
             match = re.search(r"\((.*?)\)", clin[1])
             if match is not None:
-                command = [clin[1][:match.span()[0]],match.group()[1:-1]]
+                command = [clin[1][:match.span()[0]], match.group()[1:-1]]
                 if command[0] in argdict.keys():
                     call = "{} {}".format(clin[0], command[1])
                     return argdict[command[0]](call)
         print("** Unknown syntzx: {}".format(arg))
         return False
 
-
     def do_quit(self, arg):
         """Quit command to exit the program"""
         return True
-
 
     def do_EOF(self, arg):
         """Should ecit the program"""
         print("")
         return True
 
-
     def help_quit(self):
         """Modified the documentation output"""
         print("Quit command to exit the program\n")
-
 
     def do_create(self, arg):
         """Usage: Create <class>
@@ -104,7 +98,6 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(eval(clin[0])().id)
             storage.save()
-
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
@@ -123,7 +116,6 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(objectDict["{}.{}".format(clin[0], clin[1])])
 
-
     def do_destroy(self, arg):
         """Usage: Destroy <class> <id> or <class>.destroy(<id>)
         Delete a class instance of a given id"""
@@ -138,9 +130,8 @@ class HBNBCommand(cmd.Cmd):
         elif "{}.{}".format(clin[0], clin[1]) not in objectDict.keys():
             print("** no instance found **")
         else:
-             del objectDict["{}.{}".format(clin[0],clin[1])]
-             storage.save()
-
+            del objectDict["{}.{}".format(clin[0], clin[1])]
+            storage.save()
 
     def do_all(self, arg):
         """Usage: all or all <class> or <class>.all()
@@ -158,7 +149,6 @@ class HBNBCommand(cmd.Cmd):
                 elif len(clin) == 0:
                     objl.append(obj.__str__())
             print(objl)
-
 
     def do_update(self, arg):
         """Usage: update <class> <id> <attribute_name> <attribute_value> or
@@ -208,7 +198,6 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     obj.__dict__[k] = v
         storage.save()
-
 
     def do_count(self, arg):
         """Usage: count <class> or <class>.count()
