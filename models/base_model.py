@@ -24,8 +24,8 @@ class BaseModel:
                 else:
                     self.__dict__[i] = j
         else:
-            self.id = str(uuid4())
-            self.created_at = datetime.today()
+             self.id = str(uuid4())
+             self.created_at = datetime.today()
 
     def save(self):
         """Update updated_at with the current datetime."""
