@@ -12,6 +12,26 @@ class BaseModel:
     created_at = datetime.today()
     updated_at = datetime.today()
 
+    def __init__(self, *args, **kwargs):
+        """Initialize a new BaseModel.
+        Args:
+        *args: Unused.
+            **kwargs (dict): Key/value pairs of attributes.
+        """
+        format = "%Y-%m-%dT%H:%M:%S.%f"
+        self.created_at = datetime.today()
+        self.updated_at = datetime.today()
+        if len(kwargs) != 0:
+            for i, j in kwargs.items():
+                if i == "__class__":
+                    continue
+                if i == "created_at" or i == "updated_at":
+                    self.__dict__[i] = datetime.strptime(j, format)
+                else:
+                    self.__dict__[i] = j
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.today()
 
     def save(self):
         """Update updated_at with the current datetime."""
