@@ -24,5 +24,8 @@ class HBNBCommand(cmd.Cmd):
         print("")
         return True
 
+    def help_quit(self):
+        """Modified the documentation output"""
+        print("Quit command to exit the program\n")
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
