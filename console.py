@@ -70,7 +70,7 @@ class HBNBCommand(cmd.Cmd):
                 if command[0] in argdict.keys():
                     call = "{} {}".format(clin[0], command[1])
                     return argdict[command[0]](call)
-        print("** Unknown syntzx: {}".format(arg))
+        print("** Unknown syntax: {}".format(arg))
         return False
 
     def do_quit(self, arg):
@@ -78,7 +78,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_EOF(self, arg):
-        """Should ecit the program"""
+        """Should exit the program"""
         print("")
         return True
 
@@ -94,14 +94,14 @@ class HBNBCommand(cmd.Cmd):
         if len(clin) == 0:
             print("** class name missing **")
         elif clin[0] not in HBNBCommand.__classes:
-            print("** class doesn't exist")
+            print("** class doesn't exist **")
         else:
             print(eval(clin[0])().id)
             storage.save()
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
-        Display the string representation of a class instance of a giben id.
+        Display the string representation of a class instance of a given id.
         """
         clin = parse(arg)
         objectDict = storage.all()
@@ -201,7 +201,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_count(self, arg):
         """Usage: count <class> or <class>.count()
-        Retrieve the number of instanves of a given class"""
+        Retrieve the number of instances of a given class"""
         clin = parse(arg)
         count = 0
         for obj in storage.all().values():
