@@ -20,6 +20,7 @@ from console import HBNBCommand
 from io import StringIO
 from unittest.mock import patch
 
+
 class TestHBNBCommand_prompting(unittest.TestCase):
     """Unitttests for testing prompt of HBNB command interpreter"""
 
@@ -84,7 +85,6 @@ class TestHBNBCommand_help(unittest.TestCase):
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help count"))
             self.assertEqual(h, output.getvalue().strip())
-
 
     def test_help_update(self):
         h = ("Usage: update <class> <id> <attribute_name> <attribute_value> or"
@@ -1571,4 +1571,3 @@ class TestHBNBCommand_count(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
