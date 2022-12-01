@@ -11,5 +11,5 @@ header {
     width: 128px;
     height: 60px;
     padding-left: 20px;
-    background: url(".../images/logo.png");
+    background: url("../images/logo.png");
 }
