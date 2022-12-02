@@ -26,11 +26,13 @@ button:hover {
 .locations {
     height: 100%;
     width: 25%;
+    margin: auto;
     border-right: 1px solid #DDDDDD;
 }
 .amenities {
     height: 100%;
     width: 25%;
+    margin: auto;
 }
 h3 {
     font-weight: 600;
