@@ -52,11 +52,14 @@ h4 {
 .popover {
    display: none;
  }
-.popover:hover {
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
+    display: block;    
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     width: inherit;
+    position: absolute;
 }
 .popover h2 {
     font-size: 16px;
