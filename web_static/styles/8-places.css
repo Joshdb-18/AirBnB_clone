@@ -131,6 +131,7 @@ article {
 .centr {
     position: relative;
     margin-left: 260px;
+    margin-top: 40px;
     display: flex-box;
     flex: 1;
 }
