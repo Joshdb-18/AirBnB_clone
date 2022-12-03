@@ -64,6 +64,13 @@ h4 {
 .popover h2 {
     font-size: 16px;
 }
+.places {
+    display: flex-box;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
 .places h2 {
     font-size: 30px;
     text-align: center;
@@ -76,7 +83,7 @@ article {
     border-radius: 4px;
     display: inline-block;
 }
-article h2 {
+.places h2 {
     font-size: 30px;
     margin: auto;
 }
@@ -104,6 +111,8 @@ article h2 {
     border-top: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
     margin: auto;
+    justify-content: center;
+    align-self: center
 }
 .max_guest,
 .number_rooms,
@@ -111,6 +120,17 @@ article h2 {
     width: 100px;
     margin: auto;
 }
-.h{
-    line-height: 1.6;
+article {
+    display: flex-box;
+    flex: 1;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    padding: 1em;
+    align-self: stretch;
+}
+.centr {
+    position: relative;
+    margin-left: 260px;
+    display: flex-box;
+    flex: 1;
 }
