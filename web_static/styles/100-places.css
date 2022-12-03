@@ -80,4 +80,9 @@ article {
 .reviews p {
     font-size: 12px;
 }
-    
+ul {
+    list-style-type: none;
+}
+footer {
+    position: relative;
+}    

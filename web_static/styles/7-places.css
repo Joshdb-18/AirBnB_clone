@@ -76,6 +76,9 @@ article {
     border-radius: 4px;
     display: inline-block;
 }
+ul {
+    list-style-type: none;
+}
 article h2 {
     font-size: 30px;
     margin: auto;

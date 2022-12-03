@@ -135,3 +135,9 @@ article {
     display: flex-box;
     flex: 1;
 }
+ul {
+    list-style-type: none;
+}
+footer {
+   position: relative;
+}
