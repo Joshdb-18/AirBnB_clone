@@ -34,15 +34,19 @@ button:hover {
     opacity: 0.9;
 }
 .locations {
+    display: block;
     height: 100%;
     width: 25%;
     margin: auto;
+    position: relative;
     border-right: 1px solid #DDDDDD;
 }
 .filters .amenities {
+    display: block;
     height: 100%;
     width: 25%;
     margin: auto;
+    position: relative;
 }
 h3 {
     font-weight: 600;
@@ -52,16 +56,16 @@ h4 {
     font-size: 14px;
 }
 .popover {
-   display: none;
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    position: absolute;
  }
 .filters .locations:hover .popover,
 .filters .amenities:hover .popover {
     display: block;    
-    background-color: #FAFAFA;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    width: inherit;
-    position: absolute;
 }
 .popover h2 {
     font-size: 16px;
