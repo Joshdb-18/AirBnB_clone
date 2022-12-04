@@ -1,9 +1,6 @@
 .container {
     max-width: 1000px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 30px auto;
 }
 .filters {
     background-color: white;
@@ -34,7 +31,7 @@ button:hover {
     opacity: 0.9;
 }
 .locations {
-    display: block;
+    display: inline-block;
     height: 100%;
     width: 25%;
     margin: auto;
@@ -42,7 +39,7 @@ button:hover {
     border-right: 1px solid #DDDDDD;
 }
 .filters .amenities {
-    display: block;
+    display: inline-block;
     height: 100%;
     width: 25%;
     margin: auto;
